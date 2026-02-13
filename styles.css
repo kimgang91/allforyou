@@ -800,6 +800,61 @@ section {
     border: 1px solid rgba(52, 152, 219, 0.2);
 }
 
+/* Timetable Section */
+.timetable {
+    padding: 6rem 0;
+    background: var(--bg-light);
+}
+
+.timetable-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1.3fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.timetable-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+.timetable-text p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+.timetable-image {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    background: #fff;
+}
+
+.timetable-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .timetable-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .timetable {
+        padding: 4rem 0;
+    }
+
+    .timetable-text h3 {
+        font-size: 1.6rem;
+    }
+}
+
 .program-features {
     display: none;
 }
